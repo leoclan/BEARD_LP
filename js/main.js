@@ -9,7 +9,7 @@
         let name = document.getElementById('name').value;
         let mail = document.getElementById('mail').value;
         let phone = document.getElementById('phone').value;
-        let contact = document.getElementById('contact').value;
+        let contact_text = document.getElementById('contact_text').value;
         let agree = document.getElementById('agree').checked;
 
         // メールアドレス形式
