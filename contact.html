@@ -11,9 +11,11 @@
             <div>
                 <div class="header">
                 </div>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="contact" method="POST" action="./contact-after.html" data-netlify="true" data-netlify-honeypot="bot-field">
                     <!-- netlify hiddenフィールドの埋め込み -->
-                    <input type="hidden" name="form-name" value="contact" /> 
+                    <input type="hidden" name="bot-field" />
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <div class="container">
                         <h2>資料請求する</h2>
                         <p>資料請求は無料です。<br>フォームに必要事項を入力し、<br class="pc-none1">資料請求ボタンを押してください。</p>
@@ -66,7 +68,7 @@
                             <span>以下の規約に同意の上チェックしてください。</span><br>
                             <a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer">個人情報保護方針</a>
                         </div>
-                        <div class="form-content submit" id="submit-text">
+                        <div class="form-content submit">
                             送信
                         </div>
                     </div>
