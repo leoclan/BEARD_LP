@@ -87,12 +87,27 @@
 }
 /* section class="main-header" */
 .main-header {
-    background-image: url("../img/kv.png");
     height: 60vh;
     width: 100%;
     margin-top: 78px;
     position: relative;
     text-align: center;
+    display: inline-block;
+}
+.main-header-up {
+    height: 45%;
+    width: 75%;
+    margin: 20px auto;
+    background-image: url("../img/main-header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-header-down {
+    height: 45%;
+    margin: 0 auto 20px auto;
+    width: 75%;
+    background-image: url("../img/banner03.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -507,6 +522,29 @@
     .main-header {
         height: 40vh;
         background-size: 100% 100%;
+        width: 100%;
+        margin-top: 78px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+    .main-header-left {
+        height: 45%;
+        margin: 20px auto;
+        width: 75%;
+        background-image: url(../img/main-header.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-header-right {
+        height: 45%;
+        width: 75%;
+        margin: 0 auto;
+        background-image: url(../img/banner03.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     /* section class="overview" */
     .overview {
@@ -591,12 +629,29 @@
     }
     /* section class="main-header" */
     .main-header {
-        background-image: url("../img/sp-main-head.png");
-        height: 59vh;
+        height: 50vh;
         width: 100%;
         margin-top: 78px;
         text-align: center;
         background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-header-up {
+        height: 45%;
+        width: 90%;
+        margin: 20px auto 0 auto;
+        background-image: url("../img/main-header.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-header-down {
+        height: 45%;
+        margin: 0 auto 20px auto;
+        width: 90%;
+        background-image: url("../img/banner03.png");
+        background-size: 100% 55%;
         background-repeat: no-repeat;
         background-position: center;
     }
