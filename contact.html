@@ -11,8 +11,7 @@
             <div>
                 <div class="header">
                 </div>
-                <form name="contact" method="POST" action="./contact-after.html" data-netlify="true" 
-                    :class="sendingClass">
+                <form name="contact" method="POST" action="./contact-after.html" data-netlify="true" >
                     <!-- netlify hiddenフィールドの埋め込み -->
                     <input type="hidden" name="form-name" value="contact" />
 
@@ -38,38 +37,38 @@
                         </div> -->
                         <div class="form-content">
                             <label class="label">会社名<span class="tag">必須</span></label><br>
-                            <input type="text" id="corporate" name="corporate" v-model="corporate" placeholder="会社名" class="form-text" required/>
+                            <input type="text" id="corporate" name="corporate" placeholder="会社名" class="form-text" required/>
                         </div>
                         <div class="form-content">
                             <label class="label">ご担当者様<span class="tag">必須</span></label><br>
-                            <input type="text" id="name" name="name" v-model="name" placeholder="山田太郎" class="form-text" required/>
+                            <input type="text" id="name" name="name" placeholder="山田太郎" class="form-text" required/>
                         </div>
                         <div class="form-content">
                             <label class="label">メールアドレス<span class="tag">必須</span></label><br>
-                            <input type="email" id="mail" name="mail" v-model="mail" placeholder="example@gmail.com" class="form-text" required/>
+                            <input type="email" id="mail" name="mail" placeholder="example@gmail.com" class="form-text" required/>
                         </div>
                         <div class="form-content">
                             <label class="label">電話番号<span class="tag any">任意</span></label><br>
-                            <input type="number" id="phone" name="phone" v-model="phone" placeholder="09012345678" class="form-text"/>
+                            <input type="number" id="phone" name="phone" placeholder="09012345678" class="form-text"/>
                         </div>
                         <div class="form-content">
                             <label class="label">お問い合わせ<span class="tag any">任意</span></label><br>
-                            <textarea type="text" id="contact_text" v-model="contact_text" name="contact_text" class="form-text">
+                            <textarea type="text" id="contact_text" name="contact_text" class="form-text">
                             </textarea>
                         </div>
-                        <div class="form-content">
+                        <!-- <div class="form-content">
                             <label class="label">規約に同意する<span class="tag">必須</span></label><br>
                             <label class="form-text">
                                 <input type="checkbox" class="check" id="agree" name="agree" v-model="agree" required />
                                 <span>同意する</span><br>
                             </label>
-                        </div>
+                        </div> -->
                         <div class="small">
-                            <span>以下の規約に同意の上チェックしてください。</span><br>
+                            <span>以下の規約に同意の上ご送信下さい。</span><br>
                             <a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer">個人情報保護方針</a>
                         </div>
                         <div class="form-content submit">
-                            <button type="submit" class="submit-button">送信</button>
+                            <button type="submit" class="submit-button" id="submit">送信</button>
                         </div>
                     </div>
                 </form>
